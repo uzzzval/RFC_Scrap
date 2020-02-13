@@ -4,7 +4,7 @@ import os
 
 url="https://tools.ietf.org/html/rfc"
 os.remove("rfc_list.csv")
-f = open("rfc_list.csv", "a")
+f = open("rfc_list_v_1_0.csv", "a")
 
 for i in range(1,8694):
     url_new = url+str(i)
@@ -19,7 +19,6 @@ for i in range(1,8694):
         final_string = "RFC" + str(i) + ", " + "NO TITLE" + ", " + url_new+"\n"
         print(final_string)
         f.write(final_string)
-
 f.close()
 
 
